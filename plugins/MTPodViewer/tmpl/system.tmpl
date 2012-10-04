@@ -1,3 +1,6 @@
-<mtapp:setting id="requires_login" label="Requires Login?" hint="Plese set a 1 or 0" show_hint=1>
-    <input type="text" name="requires_login" id="requires_login" value="<mt:var name='requires_login' />" />
+<mtapp:setting id="requires_login" label="Requires Login?" hint="Yes or No" show_hint=1>
+    <select name="requires_login" id="requires_login">
+      <option value="1"<mt:if name='requires_login' eq='1'> selected="selected"</mt:if>>Yes</option>
+      <option value="0"<mt:if name='requires_login' eq='0'> selected="selected"</mt:if>>No</option>
+    </select>
 </mtapp:setting>
