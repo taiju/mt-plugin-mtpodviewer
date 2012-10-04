@@ -56,8 +56,7 @@ sub partial_text {
     my $app = shift;
     my $key = $app->param('key');
     my $html = $app->partial($key);
-    $app->response_content_type('text/plain');
-    $app->response_message($html);
+    $html;
 }
 
 sub _pod_files {
