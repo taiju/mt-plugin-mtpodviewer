@@ -5,7 +5,7 @@ $(function() {
     $('#search-btn').on('click', function(e) {
         var key = $('#search-text').val();
         var $pod_contents = $('#pod-contents');
-        if ($.inArray(key, data_source)) {
+        if ($.inArray(key, data_source) > -1) {
             $pod_contents
                 .fadeOut('fast', function() {
                     $(this).html('<div class="well">wait</div>')
