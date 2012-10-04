@@ -1,0 +1,78 @@
+=encoding utf8
+
+=head1 NAME
+
+=begin html
+
+<a href="http://f.hatena.ne.jp/jdg/20121004112532"><img src="http://img.f.hatena.ne.jp/images/fotolife/j/jdg/20121004/20121004112532.png" alt="20121004112532"></a>
+
+=end html
+
+MTPodViewer - MovableTypeのモジュール用POD Viewer
+
+=head1 INSTALL
+
+=over 4
+
+=item 1
+
+mt-plugin-mtpodviewer/plugins/MTPodViewer/をあなたの{MT_HOME}/plugins/にコピーします。
+
+=item 2
+
+mt-plugin-mtpodviewer/mt-static/plugins/MTPodViewer/をあなたのmt-static/plugins/にコピーします。
+
+=back
+
+=head1 SETTINGS
+
+システムのプライン設定で、ログイン必須かログイン不要かを「1」か「0」を指定することで設定できます。
+
+既定値は、ログイン必須の「1」です。
+
+=head1 USAGE
+
+下記のようなURLでアクセスできます。
+
+http://{YOUR_WEBSITE}/{YOUR_MTHOME}/plugins/MTPodViewer/mtpodviewer.cgi
+
+=head1 HOWTOFIND
+
+検索ボックスで検索するキーワードは少しだけ特殊です。
+例えば、B<MT::Template::Context>のPODを見たい場合は、B<template-context>と検索します。
+
+すべて小文字で、モジュールの階層の区切りは - (ハイフン)を使います。
+
+B<MT(.pm)>以外は、すべてlib/MT/の下層にあるため、mtというプレフィクスは省略するようにしました。
+
+唯一の例外は、B<MT(.pm)>で、検索キーワードは、B<mt>になります。
+
+=head2 Examples
+
+検索したいモジュールと検索キーワードの例です。
+
+B<MT::Mail> => B<mail>
+
+B<MT::App> => B<app>
+
+B<MT::App::CMS> => B<app-cms>
+
+B<MT::Template::Tags::Entry> => B<template-tags-entry>
+
+=head1 DEMOSITE
+
+下記がデモサイトのURLです。ログイン不要の設定にしてあります。
+
+http://higashizm.sakura.ne.jp/mt/plugins/MTPodViewer/mtpodviewer.cgi
+
+=head1 AUTHOR
+
+HIGASHI Taiju E<lt>higashi@taiju.infoE<gt>
+
+=head1 LICENSE
+
+このライブラリはフリーソフトウェアです。
+あなたはこれを再配布、および、または変更することができます。
+Perlと同じ条件の元で。
+
+=cut

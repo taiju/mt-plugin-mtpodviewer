@@ -1,0 +1,18 @@
+id: mtpodviewer
+key: mtpodviewer
+name: MTPodViewer
+version: 0.1
+description: Pod viewer for MovableType modules.
+author_name: HIGASHI Taiju
+author_link: http://taiju.hatenablog.com/
+doc_link: http://github.com/taiju
+system_config_template: system.tmpl
+settings:
+  requires_login:
+    default: 1
+    scope: system
+applications:
+    mtpodviewer:
+        handler: MTPodViewer
+        cgi_path: $MTPodViewer::MTPodViewer::cgi_path
+        script: $MTPodViewer::MTPodViewer::script
