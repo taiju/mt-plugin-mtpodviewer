@@ -26,9 +26,9 @@ mt-plugin-mtpodviewer/mt-static/plugins/MTPodViewer/をあなたのmt-static/plu
 
 =head1 SETTINGS
 
-システムのプライン設定で、ログイン必須かログイン不要かを「1」か「0」を指定することで設定できます。
+システムのプライン設定で、ログイン必須かログイン不要かを「Yes」か「No」を指定することで設定できます。
 
-既定値は、ログイン必須の「1」です。
+既定値は、ログイン必須の「Yes」です。
 
 =head1 USAGE
 
